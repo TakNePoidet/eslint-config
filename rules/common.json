@@ -1,0 +1,237 @@
+{
+  "extends": [
+    "airbnb",
+    "standard",
+    "airbnb-base",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier",
+    "unicorn",
+    "import"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "classes": true,
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-prototype-builtins": "off",
+    "no-tabs": "off",
+    "indent": [
+      "error",
+      "tab",
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ],
+    "no-console": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "no-new": 0,
+    "max-len": [
+      "error",
+      {
+        "code": 150,
+        "tabWidth": 4
+      }
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "camelcase": [
+      "error",
+      {
+        "ignoreDestructuring": true,
+        "properties": "never"
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "no-new-object": "error",
+    "object-shorthand": [
+      "error",
+      "always",
+      {
+        "avoidQuotes": true,
+        "ignoreConstructors": true,
+        "avoidExplicitReturnArrows": true
+      }
+    ],
+    "quote-props": [
+      "error",
+      "consistent"
+    ],
+    "padded-blocks": [
+      "error",
+      "never"
+    ],
+    "space-in-parens": [
+      "error",
+      "never",
+      {
+        "exceptions": []
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "arraysInObjects": false
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxBOF": 1,
+        "maxEOF": 0
+      }
+    ],
+    "comma-style": [
+      "error",
+      "last"
+    ],
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "?": "ignore",
+          ":": "ignore"
+        }
+      }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": [
+          "const",
+          "let",
+          "var"
+        ]
+      }
+    ],
+    "newline-per-chained-call": "warn",
+    "curly": [
+      "warn",
+      "all"
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "arrow-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "space-infix-ops": "error",
+    "no-catch-shadow": "warn",
+    "no-delete-var": "warn",
+    "no-label-var": "warn",
+    "no-shadow-restricted-names": "warn",
+    "no-shadow": "error",
+    "no-undef-init": "warn",
+    "no-undef": "warn",
+    "sort-keys": 0,
+    "dot-notation": 0,
+    "no-empty": 0,
+    "space-before-blocks": 1,
+    "space-before-function-paren": [
+      1,
+      {
+        "anonymous": "always",
+        "named": "never"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js"
+        ]
+      }
+    }
+  }
+}
