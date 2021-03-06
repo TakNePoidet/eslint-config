@@ -5,6 +5,7 @@
   "author": "TakNePoidet <taknepoidet@yandex.ru>",
   "description": "TakNePoidet ESLint и Pretter конфигурация",
   "license": "MIT",
+  "repository": "github:TakNePoidet/eslint-config",
   "scripts": {
     "test": "eslint test/*{.ts,.js,.vue} --fix && prettier --write test/*{.ts,.js,.vue}"
   },
