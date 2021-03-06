@@ -1,9 +1,7 @@
 {
 	"overrides": [
 		{
-			"files": [
-				"*.vue"
-			],
+			"files": ["*.vue"],
 			"parser": "vue-eslint-parser",
 			"extends": [
 				"plugin:vue/base",

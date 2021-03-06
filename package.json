@@ -7,7 +7,8 @@
   "license": "MIT",
   "repository": "github:TakNePoidet/eslint-config",
   "scripts": {
-    "test": "eslint test/*{.ts,.js,.vue} --fix && prettier --write test/*{.ts,.js,.vue}"
+    "test": "eslint test/*{.ts,.js,.vue} --fix && prettier --write test/*{.ts,.js,.vue}",
+    "lint": "eslint ./**{.ts,.js,.vue,.json} --fix && prettier --write ./**{.ts,.js,.vue,.json}"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.16.1",

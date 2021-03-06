@@ -1,1 +1,1 @@
-module.exports = require('./rules/base.json');
+module.exports = require('./rules/common.json');
