@@ -828,6 +828,30 @@ eslint-config-standard@^16.0.2:
   resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-16.0.2.tgz#71e91727ac7a203782d0a5ca4d1c462d14e234f6"
   integrity sha512-fx3f1rJDsl9bY7qzyX8SAtP8GBSk6MfXFaTfaGgk12aAYW4gJSyRm7dM790L6cbXv63fvjY4XeSzXnb4WM+SKw==
 
+eslint-config-taknepoidet@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-taknepoidet/-/eslint-config-taknepoidet-1.0.2.tgz#195d4b2e9fdbfd5724112912d6d5ca7175e12058"
+  integrity sha512-ZrHKjXdczsNbgVmh4fypYsCgvh2ckX8CcntrUU62ZT9i/rqoJT5JBYzUa9131gbFZgwMmRWSJ7qell6v9zPoLw==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^4.16.1"
+    "@typescript-eslint/parser" "^4.16.1"
+    "@vue/eslint-config-typescript" "^7.0.0"
+    eslint "^7.21.0"
+    eslint-config-airbnb "^18.2.1"
+    eslint-config-airbnb-base "^14.2.1"
+    eslint-config-airbnb-typescript "^12.3.1"
+    eslint-config-prettier "^8.1.0"
+    eslint-config-standard "^16.0.2"
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-jsx-a11y "^6.4.1"
+    eslint-plugin-node "^11.1.0"
+    eslint-plugin-prettier "^3.3.1"
+    eslint-plugin-prettier-vue "^2.1.1"
+    eslint-plugin-promise "^4.3.1"
+    eslint-plugin-react "^7.22.0"
+    eslint-plugin-unicorn "^28.0.2"
+    eslint-plugin-vue "^7.7.0"
+
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.4.tgz#85ffa81942c25012d8231096ddf679c03042c717"
@@ -2232,6 +2256,11 @@ table@^6.0.4:
     lodash "^4.17.20"
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
+
+taknepoidet-prettier-config@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/taknepoidet-prettier-config/-/taknepoidet-prettier-config-1.0.1.tgz#2457708fe2dc812ae8a2bb588b8b9537e001e8c3"
+  integrity sha512-GoRo/TXIooS/GdZ6aJcdv01PDJtJHrYwvR4puGZ21uoOBSO2rBzLsxod4HJs6wYNRuwnI2/pqxFUZkyXOtDTmQ==
 
 text-table@^0.2.0:
   version "0.2.0"
