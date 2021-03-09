@@ -2,10 +2,12 @@ export interface IApiSidebar {
 	open(): void;
 	close(): void;
 }
+
 function Sidebar(): IApiSidebar {
 	let timeout: any | undefined;
 	let overlay = document.getElementById('page-overlay-sidebar');
 
+	console.log(1);
 	function getScrollbarWidth(): string {
 		return (
 			window.innerWidth - document.documentElement.clientWidth

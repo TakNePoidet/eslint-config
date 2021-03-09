@@ -32,7 +32,6 @@
 				"ts": "never"
 			}
 		],
-		"no-console": 0,
 		"comma-dangle": [
 			"error",
 			{
@@ -165,10 +164,11 @@
 		"no-shadow": "error",
 		"no-undef-init": "warn",
 		"no-undef": "warn",
-		"sort-keys": 0,
-		"dot-notation": 0,
-		"no-empty": 0,
-		"space-before-blocks": 1,
+		"sort-keys": "off",
+		"dot-notation": "off",
+		"no-empty": "off",
+		"no-console": "off",
+		"space-before-blocks": "warn",
 		"space-before-function-paren": [
 			1,
 			{

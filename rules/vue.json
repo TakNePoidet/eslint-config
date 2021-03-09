@@ -8,7 +8,9 @@
 				"plugin:vue/vue3-recommended",
 				"plugin:vue/vue3-essential",
 				"@vue/typescript",
-				"prettier"
+				"prettier",
+				"./common.json",
+				"./typescript.json"
 			],
 			"rules": {
 				"vue/no-deprecated-props-default-this": "off",
