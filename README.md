@@ -1,4 +1,4 @@
-# TakNePoidet ESLint и Pretter конфигурация
+# ESLint конфигурация
 
 ## Установка
 
@@ -14,21 +14,15 @@ $ yarn add -D eslint-config-taknepoidet eslint
 
 Добавьте файл `.eslintrc` в корень вашего проекта, если у вас его нет.
 
-```bash
-./node_modules/.bin/eslint init
-```
-
 Затем добавьте туда раздел `extends`:
 
 ```json
 {
   "extends": [
-    "taknepoidet/common"
+    "taknepoidet"
   ]
 }
 ```
-
-
 ## Использование в TypeScript
 
 1. Следуйте инструкциям для JavaScript.
@@ -37,7 +31,6 @@ $ yarn add -D eslint-config-taknepoidet eslint
 ```json
 {
   "extends": [
-    "taknepoidet/common",
     "taknepoidet/typescript"
   ]
 }
@@ -51,8 +44,11 @@ $ yarn add -D eslint-config-taknepoidet eslint
 ```json
 {
   "extends": [
-    "taknepoidet/common",
     "taknepoidet/vue"
   ]
 }
+```
+## Пример команды
+```bash
+eslint ./src
 ```
