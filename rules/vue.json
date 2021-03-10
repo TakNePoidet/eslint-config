@@ -15,17 +15,6 @@
 			"rules": {
 				"vue/no-deprecated-props-default-this": "off",
 				"vue/no-multiple-template-root": "off",
-				"vue/html-indent": [
-					"error",
-					"tab",
-					{
-						"attribute": 1,
-						"baseIndent": 1,
-						"closeBracket": 0,
-						"alignAttributesVertically": false,
-						"ignores": []
-					}
-				],
 				"vue/max-attributes-per-line": [
 					"error",
 					{
@@ -38,23 +27,35 @@
 				],
 				"vue/require-component-is": "off",
 				"vue/component-name-in-template-casing": "off",
-				"vue/html-self-closing": [
+				"vue/html-indent": [
 					"error",
+					"tab",
 					{
-						"html": {
-							"void": "never",
-							"normal": "never",
-							"component": "never"
-						},
-						"svg": "always",
-						"math": "always"
+						"attribute": 1,
+						"closeBracket": 0,
+						"baseIndent": 1,
+						"alignAttributesVertically": true,
+						"ignores": ["VAttribute"]
 					}
 				],
+
 				"vue/html-closing-bracket-newline": [
 					"error",
 					{
 						"singleline": "never",
 						"multiline": "always"
+					}
+				],
+				"vue/html-self-closing": [
+					"error",
+					{
+						"html": {
+							"void": "always",
+							"normal": "always",
+							"component": "always"
+						},
+						"svg": "never",
+						"math": "always"
 					}
 				]
 			}
