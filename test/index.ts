@@ -9,9 +9,7 @@ function Sidebar(): IApiSidebar {
 
 	console.log(1);
 	function getScrollbarWidth(): string {
-		return (
-			window.innerWidth - document.documentElement.clientWidth
-		).toString();
+		return (window.innerWidth - document.documentElement.clientWidth).toString();
 	}
 
 	function getSidebarContainer(): HTMLElement | undefined {

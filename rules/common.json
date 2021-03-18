@@ -175,7 +175,10 @@
 				"anonymous": "always",
 				"named": "never"
 			}
-		]
+		],
+		"import/prefer-default-export": "off",
+		"no-restricted-syntax": "off",
+		"no-return-await": "off"
 	},
 	"settings": {
 		"import/resolver": {

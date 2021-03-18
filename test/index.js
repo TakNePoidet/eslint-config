@@ -23,11 +23,7 @@ function scroll(el, direction) {
 			result = direction;
 		}
 
-		if (
-			direction * top > 0 &&
-			pageHeight - window.pageYOffset >
-				direction * document.documentElement.clientHeight
-		) {
+		if (direction * top > 0 && pageHeight - window.pageYOffset > direction * document.documentElement.clientHeight) {
 			window.scrollBy(0, result);
 			requestAnimationFrame(fn);
 		}
@@ -43,8 +39,7 @@ export default function scrollToAnhor(anhor) {
 	let heightHeader = 0;
 
 	if (document.querySelector('header')) {
-		heightHeader = document.querySelector('header').getBoundingClientRect()
-			.height;
+		heightHeader = document.querySelector('header').getBoundingClientRect().height;
 	}
 	const startY = anhor.getBoundingClientRect().top + heightHeader;
 	let direction;

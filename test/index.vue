@@ -11,10 +11,10 @@
 				<div class="app-modal-wrap" @click.prevent.stop="close">
 					<div class="app-modal-container" @click.stop>
 						<div class="app-modal-header">
-							<slot name="header"></slot>
+							<slot name="header" />
 						</div>
 						<div class="app-modal-content">
-							<slot></slot>
+							<slot />
 						</div>
 					</div>
 				</div>
