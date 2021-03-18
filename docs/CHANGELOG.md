@@ -1,5 +1,5 @@
 # Changelog
-## 1.0.4
+## 1.0.9
 `New` - Новые правила javascript
 ```json
 {

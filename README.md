@@ -52,3 +52,6 @@ $ yarn add -D eslint-config-taknepoidet eslint
 ```bash
 eslint ./src
 ```
+
+## История изменений
+Смотреть весь список [изменений](docs/CHANGELOG.md)
