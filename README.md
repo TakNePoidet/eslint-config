@@ -18,11 +18,10 @@ $ yarn add -D eslint-config-taknepoidet eslint
 
 ```json
 {
-  "extends": [
-    "taknepoidet"
-  ]
+	"extends": ["taknepoidet"]
 }
 ```
+
 ## Использование в TypeScript
 
 1. Следуйте инструкциям для JavaScript.
@@ -30,9 +29,7 @@ $ yarn add -D eslint-config-taknepoidet eslint
 
 ```json
 {
-  "extends": [
-    "taknepoidet/typescript"
-  ]
+	"extends": ["taknepoidet/typescript"]
 }
 ```
 
@@ -43,15 +40,16 @@ $ yarn add -D eslint-config-taknepoidet eslint
 
 ```json
 {
-  "extends": [
-    "taknepoidet/vue"
-  ]
+	"extends": ["taknepoidet/vue"]
 }
 ```
+
 ## Пример команды
+
 ```bash
 eslint ./src
 ```
 
 ## История изменений
+
 Смотреть весь список [изменений](docs/CHANGELOG.md)

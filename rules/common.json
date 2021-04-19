@@ -89,7 +89,6 @@
 				"avoidExplicitReturnArrows": true
 			}
 		],
-		"quote-props": ["error", "consistent"],
 		"padded-blocks": ["error", "never"],
 		"space-in-parens": [
 			"error",
@@ -161,7 +160,6 @@
 		"no-delete-var": "warn",
 		"no-label-var": "warn",
 		"no-shadow-restricted-names": "warn",
-		"no-shadow": "error",
 		"no-undef-init": "warn",
 		"no-undef": "warn",
 		"sort-keys": "off",
@@ -178,7 +176,12 @@
 		],
 		"import/prefer-default-export": "off",
 		"no-restricted-syntax": "off",
-		"no-return-await": "off"
+		"no-return-await": "off",
+		"no-shadow": 0,
+		"@typescript-eslint/no-shadow": 0,
+		"quote-props": ["error", "as-needed"],
+		"no-v-for-template-key-on-child": 0,
+		"react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }]
 	},
 	"settings": {
 		"import/resolver": {
