@@ -2256,10 +2256,10 @@ table@^6.0.4:
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
 
-taknepoidet-prettier-config@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/taknepoidet-prettier-config/-/taknepoidet-prettier-config-1.0.4.tgz#7746e2fc51e7bc5dbf5828ea36c781e30d7d3362"
-  integrity sha512-fFwOYt3aVGb2duzkkbW24GWl4uvTZFVWNfb/i/g700KSa+nUz6xAFowSvavqzeqNtNcrwkOpIistX4wSwlWeOA==
+taknepoidet-prettier-config@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/taknepoidet-prettier-config/-/taknepoidet-prettier-config-1.1.0.tgz#668d5bd63a5459b087fe69d96cafa13eb2ff0f17"
+  integrity sha512-tdgvJO49jrfxjonZpXYsa9e9VCbHzr6fhoe/NjcvOdjlbhAl/VOn+tVT5SO+Fl6Y0/9nVaK8qPsV3NgU81UDEQ==
 
 text-table@^0.2.0:
   version "0.2.0"
