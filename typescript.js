@@ -1,1 +1,1 @@
-module.exports = require('./rules/typescript.json');
+module.exports = require('./rules/typescript.js');

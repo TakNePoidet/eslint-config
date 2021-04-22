@@ -1,1 +1,1 @@
-module.exports = require('./rules/vue.json');
+module.exports = require('./rules/vue.js');
