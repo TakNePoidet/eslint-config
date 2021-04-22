@@ -1,3 +1,1 @@
-module.exports = {
-	extends: ['./rules/common.js', './rules/typescript.js', './rules/vue.js']
-};
+module.exports = require('./rules/index');

@@ -1,0 +1,84 @@
+{
+	"overrides": [
+		{
+			"files": ["*.vue"],
+			"extends": [
+				"plugin:vue/essential",
+				"plugin:vue-libs/recommended",
+				"plugin:vue/base",
+				"plugin:vue/vue3-essential",
+				"@vue/airbnb",
+				"@vue/typescript",
+				"@vue/typescript/recommended",
+				"./common.json",
+				"./typescript.json"
+			],
+			"plugins": ["@typescript-eslint"],
+			"rules": {
+				"@typescript-eslint/explicit-module-boundary-types": "off",
+				"vue/no-deprecated-props-default-this": "off",
+				"vue/no-multiple-template-root": "off",
+				"vue/max-attributes-per-line": [
+					"error",
+					{
+						"singleline": 3,
+						"multiline": {
+							"max": 1,
+							"allowFirstLine": true
+						}
+					}
+				],
+				"vue/require-component-is": "off",
+				"vue/component-name-in-template-casing": "off",
+				"vue/html-indent": [
+					"error",
+					"tab",
+					{
+						"attribute": 1,
+						"closeBracket": 0,
+						"baseIndent": 1,
+						"alignAttributesVertically": true,
+						"ignores": ["VAttribute"]
+					}
+				],
+
+				"vue/html-closing-bracket-newline": [
+					"error",
+					{
+						"singleline": "never",
+						"multiline": "always"
+					}
+				],
+				"vue/html-self-closing": [
+					"error",
+					{
+						"html": {
+							"void": "always",
+							"normal": "always",
+							"component": "always"
+						},
+						"svg": "never",
+						"math": "always"
+					}
+				]
+			},
+			"settings": {
+				"import/resolver": "webpack"
+			},
+			"parserOptions": {
+				"parser": "@typescript-eslint/parser",
+				"sourceType": "module",
+				"ecmaVersion": 2020,
+				"extraFileExtensions": [".vue"]
+			},
+			"overrides": [
+				{
+					"files": ["*.ts", "*.tsx"],
+					"rules": {
+						"@typescript-eslint/explicit-module-boundary-types": ["error"]
+					}
+				}
+			]
+		}
+	]
+}

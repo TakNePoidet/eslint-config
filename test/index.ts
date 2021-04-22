@@ -7,7 +7,6 @@ function Sidebar(): IApiSidebar {
 	let timeout: any | undefined;
 	let overlay = document.getElementById('page-overlay-sidebar');
 
-	console.log(1);
 	function getScrollbarWidth(): string {
 		return (window.innerWidth - document.documentElement.clientWidth).toString();
 	}
@@ -75,7 +74,7 @@ function Sidebar(): IApiSidebar {
 	if (!overlay) {
 		overlay = document.createElement('div');
 		overlay.id = 'page-overlay-sidebar';
-		overlay.hidden = true;
+		overlay.hidden = true as boolean;
 		document.body.appendChild(overlay);
 		overlay.onclick = (event) => {
 			event.preventDefault();

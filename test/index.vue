@@ -7,9 +7,18 @@
 			@leave="leave"
 			@after-leave="afterLeave"
 		>
-			<div v-if="isOpen" :class="classModal">
-				<div class="app-modal-wrap" @click.prevent.stop="close">
-					<div class="app-modal-container" @click.stop>
+			<div
+				v-if="isOpen"
+				:class="classModal"
+			>
+				<div
+					class="app-modal-wrap"
+					@click.prevent.stop="close"
+				>
+					<div
+						class="app-modal-container"
+						@click.stop
+					>
 						<div class="app-modal-header">
 							<slot name="header" />
 						</div>
@@ -98,51 +107,51 @@ export default {
 };
 </script>
 <style lang="scss">
-.app-modal {
-	width: 100%;
-	height: 100%;
-	background-color: hsla(0, 0%, 60.8%, 0.75);
-	left: 0;
-	top: 0;
-	position: fixed;
-	opacity: 0;
-	visibility: hidden;
-	z-index: -1;
-	backdrop-filter: blur(0px);
-	pointer-events: none;
-	&-wrap {
-		overflow-y: auto;
+	.app-modal {
+		width: 100%;
 		height: 100%;
-	}
-	&-container {
-		margin: 10vh auto;
-		background: #fff;
-		max-width: 800px;
-		border-radius: 3px;
-		padding: 20px;
-		padding-top: 35px;
-		position: relative;
-	}
-	&-header {
-		border-bottom: 1px solid #f1f1f1;
-		padding-bottom: 20px;
-		margin-bottom: 20px;
-		h3 {
-			font-size: 30px;
+		background-color: hsla(0, 0%, 60.8%, 0.75);
+		left: 0;
+		top: 0;
+		position: fixed;
+		opacity: 0;
+		visibility: hidden;
+		z-index: -1;
+		backdrop-filter: blur(0px);
+		pointer-events: none;
+		&-wrap {
+			overflow-y: auto;
+			height: 100%;
+		}
+		&-container {
+			margin: 10vh auto;
+			background: #fff;
+			max-width: 800px;
+			border-radius: 3px;
+			padding: 20px;
+			padding-top: 35px;
+			position: relative;
+		}
+		&-header {
+			border-bottom: 1px solid #f1f1f1;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			h3 {
+				font-size: 30px;
+			}
 		}
 	}
-}
-.app-modal.app-modal--open {
-	opacity: 1;
-	visibility: visible;
-	z-index: 110;
-	// backdrop-filter: blur(2px);
-	pointer-events: auto;
-}
-.app-component-edit {
-	padding: 0;
-	.app-block-content-edit {
-		margin: 0px -20px;
+	.app-modal.app-modal--open {
+		opacity: 1;
+		visibility: visible;
+		z-index: 110;
+		// backdrop-filter: blur(2px);
+		pointer-events: auto;
 	}
-}
+	.app-component-edit {
+		padding: 0;
+		.app-block-content-edit {
+			margin: 0px -20px;
+		}
+	}
 </style>

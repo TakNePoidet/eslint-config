@@ -25,22 +25,22 @@ $ yarn add -D eslint-config-taknepoidet eslint
 ## Использование в TypeScript
 
 1. Следуйте инструкциям для JavaScript.
-2. Расширить код `taknepoidet/typescript`.
+2. Расширить код `taknepoidet/rules/typescript`.
 
 ```json
 {
-	"extends": ["taknepoidet/typescript"]
+	"extends": ["taknepoidet/rules/typescript"]
 }
 ```
 
 ## Использование в Vue.js
 
 1. Следуйте инструкциям для JavaScript.
-2. Расширить код `taknepoidet/vue`.
+2. Расширить код `taknepoidet/rules/vue`.
 
 ```json
 {
-	"extends": ["taknepoidet/vue"]
+	"extends": ["taknepoidet/rules/vue"]
 }
 ```
 

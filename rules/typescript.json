@@ -1,0 +1,33 @@
+{
+	"overrides": [
+		{
+			"files": ["*.ts", "*.tsx"],
+			"parserOptions": {
+				"sourceType": "module",
+				"project": ["./tsconfig.json"]
+			},
+			"parser": "@typescript-eslint/parser",
+			"plugins": ["@typescript-eslint"],
+			"extends": ["airbnb-typescript/base", "plugin:@typescript-eslint/recommended", "prettier"],
+			"rules": {
+				"@typescript-eslint/no-explicit-any": "off",
+				"@typescript-eslint/ban-ts-comment": "off",
+				"@typescript-eslint/return-await": "off",
+				"prettier/prettier": [
+					"error",
+					{
+						"singleQuote": true,
+						"parser": "typescript"
+					}
+				]
+			},
+			"settings": {
+				"import/resolver": {
+					"node": {
+						"extensions": [".ts"]
+					}
+				}
+			}
+		}
+	]
+}
