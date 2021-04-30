@@ -53,7 +53,9 @@ export default {
 		},
 		onClose: {
 			type: Function,
-			default() {}
+			default() {
+				// do nothing.
+			}
 		}
 	},
 	data() {

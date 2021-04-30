@@ -1,9 +1,9 @@
 export interface IApiSidebar {
-	open(): void;
-	close(): void;
+	open(event: Event | null): void;
+	close(event: Event | null): void;
 }
-
 function Sidebar(): IApiSidebar {
+	console.log('init');
 	let timeout: any | undefined;
 	let overlay = document.getElementById('page-overlay-sidebar');
 
@@ -14,7 +14,7 @@ function Sidebar(): IApiSidebar {
 	function getSidebarContainer(): HTMLElement | undefined {
 		return document.getElementById('app-sidebar') || undefined;
 	}
-	function open(event: Event | null = null) {
+	function open(event) {
 		if (event) {
 			event.preventDefault();
 		}

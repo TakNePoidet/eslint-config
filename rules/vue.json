@@ -4,7 +4,6 @@
 			"files": ["*.vue"],
 			"extends": [
 				"plugin:vue/essential",
-				"plugin:vue-libs/recommended",
 				"plugin:vue/base",
 				"plugin:vue/vue3-essential",
 				"@vue/airbnb",
@@ -15,6 +14,7 @@
 			],
 			"plugins": ["@typescript-eslint"],
 			"rules": {
+				"@typescript-eslint/no-unused-vars": [2, { "args": "none" }],
 				"@typescript-eslint/explicit-module-boundary-types": "off",
 				"vue/no-deprecated-props-default-this": "off",
 				"vue/no-multiple-template-root": "off",

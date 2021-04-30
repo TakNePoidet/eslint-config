@@ -1,1 +1,5 @@
-module.exports = require('./rules/index');
+module.exports = {
+	extends: [
+		'./rules/index.js'
+	]
+};
