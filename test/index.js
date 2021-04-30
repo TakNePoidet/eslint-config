@@ -22,7 +22,7 @@ function scroll(el, direction) {
 		} else if (result === 0) {
 			result = direction;
 		}
-
+		console.log(result);
 		if (
 			direction * top > 0 &&
 			pageHeight - window.pageYOffset >
