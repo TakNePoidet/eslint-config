@@ -33,11 +33,12 @@
 	</form>
 </template>
 <script lang="ts">
-import { defineComponent, onMounted, reactive, ref, toRefs, watch } from 'vue';
 
+//@ts-ignore
+import { defineComponent, onMounted, reactive, ref, toRefs, watch } from 'vue';
 interface State {
 	stage: string;
-	day: string;
+	day: any;
 	participants: string[];
 }
 class Banner {
