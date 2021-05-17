@@ -1,41 +1,39 @@
 <template>
-	<form class="pb-5" @submit.prevent="download">
-		<h1 class="mt-5 mb-5">Генератор картинки</h1>
-		<h3 class="mt-4 mb-3">Основные данные</h3>
-		<div class="mt-3 mb-3">
-			<label class="form-label">Этап</label>
-			<input
-				v-model="stage"
-				type="text"
-				class="form-control"
-				placeholder="Введите номер этапа римской цифрой"
-				max="500"
-				min="1"
-			/>
-		</div>
-		<div class="mt-3 mb-3">
-			<label class="form-label">Дата проведения</label>
-			<input v-model="day" type="text" class="form-control" placeholder="Введите дату проведения" />
-		</div>
+	<h1 class="mt-5 mb-5">Генератор картинки</h1>
+	<h3 class="mt-4 mb-3">Основные данные</h3>
+	<div class="mt-3 mb-3">
+		<label class="form-label">Этап</label>
+		<input
+			v-model="stage"
+			type="text"
+			class="form-control"
+			placeholder="Введите номер этапа римской цифрой"
+			max="500"
+			min="1"
+		/>
+	</div>
+	<div class="mt-3 mb-3">
+		<label class="form-label">Дата проведения</label>
+		<input v-model="day" type="text" class="form-control" placeholder="Введите дату проведения" />
+	</div>
 
-		<h3 class="mt-4 mb-3">Участники</h3>
-		<div v-for="(item, i) in participants" :key="i" class="mt-3 mb-3">
-			<label class="form-label">Участник #{{ i + 1 }}</label>
-			<input v-model="participants[i]" type="text" class="form-control" />
-		</div>
+	<h3 class="mt-4 mb-3">Участники</h3>
+	<div v-for="(item, i) in participants" :key="i" class="mt-3 mb-3">
+		<label class="form-label">Участник #{{ i + 1 }}</label>
+		<input v-model="participants[i]" type="text" class="form-control" />
+	</div>
 
-		<h3 class="mt-4 mb-4">Баннер</h3>
-		<div ref="containerCanvas" />
-		<div class="mb-2 mt-2 d-grid gap-3">
-			<button class="btn btn-success mr-2" @click.prevent="download">Скачать</button>
-			<button class="btn btn-secondary">Обновить</button>
-		</div>
-	</form>
+	<h3 class="mt-4 mb-4">Баннер</h3>
+	<div ref="containerCanvas" />
+	<div class="mb-2 mt-2 d-grid gap-3">
+		<button class="btn btn-success mr-2" @click.prevent="download">Скачать</button>
+		<button class="btn btn-secondary">Обновить</button>
+	</div>
 </template>
 <script lang="ts">
-
-//@ts-ignore
+// @ts-ignore
 import { defineComponent, onMounted, reactive, ref, toRefs, watch } from 'vue';
+
 interface State {
 	stage: string;
 	day: any;

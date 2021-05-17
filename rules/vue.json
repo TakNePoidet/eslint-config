@@ -17,8 +17,7 @@
 			],
 			"plugins": ["@typescript-eslint"],
 			"rules": {
-				"@typescript-eslint/no-unused-vars": [2, { "args": "none" }],
-				"@typescript-eslint/explicit-module-boundary-types": "off",
+				"no-use-before-define": 0,
 				"vue/no-deprecated-props-default-this": "off",
 				"vue/no-multiple-template-root": "off",
 
@@ -54,7 +53,14 @@
 						"math": "always"
 					}
 				],
-				"prettier-vue/prettier": ["error", {}]
+				"prettier-vue/prettier": ["error", {}],
+
+				"@typescript-eslint/no-unused-vars": [2, { "args": "none" }],
+				"@typescript-eslint/no-explicit-any": "off",
+				"@typescript-eslint/ban-ts-comment": "off",
+				"@typescript-eslint/return-await": "off",
+				"@typescript-eslint/no-useless-constructor": 0,
+				"@typescript-eslint/explicit-module-boundary-types": "off"
 			},
 			"settings": {
 				"import/resolver": "webpack",
@@ -85,14 +91,6 @@
 				"ecmaVersion": 2020,
 				"extraFileExtensions": [".vue"]
 			},
-			"overrides": [
-				{
-					"files": ["*.ts", "*.tsx"],
-					"rules": {
-						"@typescript-eslint/explicit-module-boundary-types": ["error"]
-					}
-				}
-			]
 		}
 	]
 }

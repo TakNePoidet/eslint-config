@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-taknepoidet",
-	"version": "1.3.9",
+	"version": "1.3.10",
 	"main": "index.js",
 	"author": "TakNePoidet <taknepoidet@yandex.ru>",
 	"description": "TakNePoidet ESLint и Pretter конфигурация",
