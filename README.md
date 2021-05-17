@@ -53,3 +53,14 @@ eslint ./src
 ## История изменений
 
 Смотреть весь список [изменений](docs/CHANGELOG.md)
+
+		"@vue/cli-service": "^4.5.12",
+		"@vue/eslint-config-airbnb": "^5.3.0",
+		"@vue/eslint-config-typescript": "^7.0.0",
+		"eslint": "^6.0.0",
+		"eslint-plugin-prettier-vue": "^3.0.0",
+
+		"eslint-plugin-vue": "^7.9.0",
+		"eslint-plugin-vue-libs": "^4.0.0",
+
+		"vue-eslint-parser": "^7.6.0"

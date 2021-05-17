@@ -237,7 +237,10 @@
           ".tsx"
         ]
       }
-    ]
+    ],
+		"no-underscore-dangle": ["error", { "allowAfterSuper": true, "allowAfterThis": true }],
+		"no-useless-constructor": 0,
+		"class-methods-use-this": 0
   },
   "settings":{
     "import/resolver":{

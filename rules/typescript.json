@@ -20,7 +20,8 @@
 						"singleQuote": true,
 						"parser": "typescript"
 					}
-				]
+				],
+				"@typescript-eslint/no-useless-constructor": 0
 			},
 			"settings": {
 				"import/resolver": {
