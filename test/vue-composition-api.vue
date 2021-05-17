@@ -1,28 +1,14 @@
 <template>
 	<div>
-		<div>{{isLover ? loverTitle: upperTitle}}</div>
+		<div>{{ isLover ? loverTitle : upperTitle }}</div>
 		<button @click="clickHandle">click</button>
 	</div>
 </template>
 
 <script lang="ts">
-import { ComponentPropsOptions, ComputedGetter, ComputedOptions, defineComponent, MethodOptions } from 'vue';
+import { defineComponent } from 'vue';
 
-interface Data {
-	isLover: boolean;
-}
-interface Props {
-	title: string;
-}
-interface Computed extends ComputedOptions {
-	loverTitle: ComputedGetter<string>;
-	upperTitle: ComputedGetter<string>;
-}
-interface Methods extends MethodOptions {
-	log: (text: string) => void;
-	clickHandle: (event: Event) => void;
-}
-export default defineComponent<ComponentPropsOptions<Props>, Props, Data, Computed, Methods>({
+export default defineComponent({
 	props: {
 		title: {
 			type: String,

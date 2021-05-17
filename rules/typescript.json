@@ -21,7 +21,8 @@
 						"parser": "typescript"
 					}
 				],
-				"@typescript-eslint/no-useless-constructor": 0
+				"@typescript-eslint/no-useless-constructor": 0,
+				"no-use-before-define": 0
 			},
 			"settings": {
 				"import/resolver": {

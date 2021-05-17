@@ -9,6 +9,9 @@
 				"@vue/airbnb",
 				"@vue/typescript",
 				"@vue/typescript/recommended",
+				"plugin:vue/recommended",
+				"plugin:prettier-vue/recommended",
+				"prettier",
 				"./common.json",
 				"./typescript.json"
 			],
@@ -60,10 +63,31 @@
 						"svg": "never",
 						"math": "always"
 					}
-				]
+				],
+				"prettier-vue/prettier": ["error"]
 			},
 			"settings": {
-				"import/resolver": "webpack"
+				"import/resolver": "webpack",
+				"prettier-vue": {
+					"SFCBlocks": {
+						"template": true,
+						"script": true,
+						"style": true,
+
+						"customBlocks": {
+							"docs": { "lang": "markdown" },
+							"config": { "lang": "json" },
+							"module": { "lang": "js" },
+							"comments": false
+
+						}
+					},
+					"usePrettierrc": true,
+					"fileInfoOptions": {
+						"ignorePath": ".testignore",
+						"withNodeModules": false
+					}
+				}
 			},
 			"parserOptions": {
 				"parser": "@typescript-eslint/parser",
