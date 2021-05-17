@@ -21,16 +21,7 @@
 				"@typescript-eslint/explicit-module-boundary-types": "off",
 				"vue/no-deprecated-props-default-this": "off",
 				"vue/no-multiple-template-root": "off",
-				"vue/max-attributes-per-line": [
-					"error",
-					{
-						"singleline": 3,
-						"multiline": {
-							"max": 1,
-							"allowFirstLine": true
-						}
-					}
-				],
+
 				"vue/require-component-is": "off",
 				"vue/component-name-in-template-casing": "off",
 				"vue/html-indent": [
@@ -44,7 +35,6 @@
 						"ignores": ["VAttribute"]
 					}
 				],
-
 				"vue/html-closing-bracket-newline": [
 					"error",
 					{
@@ -64,7 +54,7 @@
 						"math": "always"
 					}
 				],
-				"prettier-vue/prettier": ["error"]
+				"prettier-vue/prettier": ["error", {}]
 			},
 			"settings": {
 				"import/resolver": "webpack",
