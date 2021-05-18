@@ -1,5 +1,3 @@
 module.exports = {
-	extends: [
-		'./rules/index.js'
-	]
+	extends: ['./rules/index.json']
 };

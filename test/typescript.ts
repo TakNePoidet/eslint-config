@@ -14,7 +14,7 @@ function Sidebar(): IApiSidebar {
 	function getSidebarContainer(): HTMLElement | undefined {
 		return document.getElementById('app-sidebar') || undefined;
 	}
-	function open(event) {
+	function open(event: Event) {
 		if (event) {
 			event.preventDefault();
 		}
